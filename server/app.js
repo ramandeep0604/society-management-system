@@ -6,7 +6,5 @@ app.get('/health', (req, res) => {
   res.send("health is ok");
 });
 
-// ❌ REMOVE app.listen()
-// ✅ EXPORT app instead
-
+// ✅ For Vercel (ESM export)
 export default app;
